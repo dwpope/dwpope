@@ -8,7 +8,7 @@ Staff-level product designer who builds spatial computing and on-device ML syste
 
 Under the hood: a pure-logic Swift Package with protocol-oriented engines, three-signal scoring for sip detection, state machine hysteresis for posture classification, Combine-based reactive pipeline throttled at 10 FPS to prevent ARFrame memory retention, thermal-adaptive processing, and a training-mode data collection system for future on-device ML classification.
 
-585 tests. 40K+ lines. Ships on-device, no cloud dependency.
+599 tests. ~40K lines. Ships on-device, no cloud dependency.
 
 ## Focus areas
 
