@@ -1,22 +1,24 @@
 # Dave Pope
 
-Designer who builds. I work across product design and iOS engineering, with a focus on on-device sensing and real-time signal processing.
+Staff-level product designer who builds spatial computing and on-device ML systems — not just designs them.
 
-## Current Project
+## What I'm working on
 
-### [Quant](https://github.com/dwpope/Quant)
-A real-time posture monitoring iOS app that uses Apple Vision body pose detection to track positioning, detect drinking gestures for hydration logging, and nudge you when you slouch — all processed on-device.
+**[Quant](https://github.com/dwpope/Quant)** — an iOS app that uses ARKit and the Vision framework to monitor posture and detect hydration patterns in real-time.
 
-**Stack:** SwiftUI, ARKit, Vision, Combine, on-device ML pipeline
+Under the hood: a pure-logic Swift Package with protocol-oriented engines, three-signal scoring for sip detection, state machine hysteresis for posture classification, Combine-based reactive pipeline throttled at 10 FPS to prevent ARFrame memory retention, thermal-adaptive processing, and a training-mode data collection system for future on-device ML classification.
 
-**Highlights:**
-- 40,000+ lines of Swift across 237 files with 585 tests
-- Pure-logic Swift Package (`PostureLogic`) with zero platform dependencies — entire detection pipeline testable without a simulator
-- Three-signal sip detection with training-mode data collection for a future CreateML classifier
-- Traffic-light state machine with hysteresis for posture evaluation
-- Dynamic thermal adaptation (frame rate scaling from 10 FPS down to 2 FPS based on device temperature)
-- Protocol-oriented engine design with mock injection and runtime debug inspection
+585 tests. 40K+ lines. Ships on-device, no cloud dependency.
 
-## About
+## Focus areas
 
-I care about building things that work well at the intersection of design judgment and engineering depth. My approach: ship real software, not just mockups.
+- Spatial computing + ambient sensing (without a headset)
+- On-device ML pipelines for health and behaviour signals
+- Bridging design judgment with technical implementation
+- Signal processing, state machines, and detection systems
+
+## Background
+
+Currently at a major UK bank designing AI-powered products. Previously shipped design across financial services, spatial computing prototypes, and accessibility tooling.
+
+Based in London. Australian + UK citizenship.
