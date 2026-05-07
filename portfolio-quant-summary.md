@@ -12,7 +12,7 @@ This project demonstrates end-to-end ownership of a non-trivial sensing pipeline
 
 ## Key Technical Decisions
 
-**Pure-logic package separation.** All detection logic lives in `PostureLogic`, a Swift package with zero UIKit/SwiftUI/ARKit dependencies. The entire pipeline runs with `swift test` on macOS in seconds, no simulator. This made the difference between a project that's testable in theory and one with 582 tests that actually run in CI.
+**Pure-logic package separation.** All detection logic lives in `PostureLogic`, a Swift package with zero UIKit/SwiftUI/ARKit dependencies. The entire pipeline runs with `swift test` on macOS in seconds, no simulator. This made the difference between a project that's testable in theory and one with 585 tests that actually run in CI.
 
 **Three-signal sip detection.** A simple proximity threshold produces too many false positives (chin-resting, phone calls, adjusting glasses). The SipDetector scores three independent signals — proximity, velocity profile, and duration band — with proximity normalised by shoulder width for scale invariance. The training-mode architecture runs a completely separate data path so ground-truth collection never touches production logic.
 
@@ -24,8 +24,8 @@ This project demonstrates end-to-end ownership of a non-trivial sensing pipeline
 
 ## By the Numbers
 
-- 39,000+ lines of Swift across 237 files
-- 582 tests across 64 test files (unit, integration, golden recording replay, stability, migration)
+- 40,000+ lines of Swift across 237 files
+- 585 tests across 63 test files (unit, integration, golden recording replay, stability, migration)
 - 60 UI variant designs exploring different monitoring visualisations
 - watchOS companion app with live connectivity
 

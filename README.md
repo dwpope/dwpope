@@ -10,7 +10,7 @@ A real-time posture monitoring iOS app that uses Apple Vision body pose detectio
 **Stack:** SwiftUI, ARKit, Vision, Combine, on-device ML pipeline
 
 **Highlights:**
-- 39,000+ lines of Swift across 237 files with 582 tests
+- 40,000+ lines of Swift across 237 files with 585 tests
 - Pure-logic Swift Package (`PostureLogic`) with zero platform dependencies — entire detection pipeline testable without a simulator
 - Three-signal sip detection with training-mode data collection for a future CreateML classifier
 - Traffic-light state machine with hysteresis for posture evaluation
